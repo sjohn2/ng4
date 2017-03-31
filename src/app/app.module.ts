@@ -4,8 +4,13 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import {RouterModule, Routes} from '@angular/router';
 
+
+
 import { AppComponent } from './app.component';
 import { ContentProjectionComponent } from './content-projection/content-projection.component';
+
+import {UtilsModule} from './utils/utils.module'
+
 
 const appRoutes: Routes = [   
     { path: 'content-projection', component: ContentProjectionComponent }
@@ -23,7 +28,7 @@ const appRoutes: Routes = [
       appRoutes,{useHash:true}
     )   
   ],
-  exports: [RouterModule],
+  exports: [RouterModule, UtilsModule],
   providers: [],
   bootstrap: [AppComponent]
 })
