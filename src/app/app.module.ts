@@ -19,6 +19,7 @@ const appRoutes: Routes = [
   declarations: [
     AppComponent,
     ContentProjectionComponent
+    
   ],
   imports: [
     BrowserModule,
@@ -26,9 +27,10 @@ const appRoutes: Routes = [
     HttpModule,
     RouterModule.forRoot(
       appRoutes,{useHash:true}
-    )   
+    ),
+    UtilsModule   
   ],
-  exports: [RouterModule, UtilsModule],
+  exports: [RouterModule],
   providers: [],
   bootstrap: [AppComponent]
 })

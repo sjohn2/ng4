@@ -4,6 +4,7 @@ import { ContentComponent } from './content/content.component';
 
 @NgModule({
   imports: [],
-  declarations: [ContentComponent]
+  declarations: [ContentComponent],
+  exports: [ContentComponent]
 })
 export class UtilsModule { }
